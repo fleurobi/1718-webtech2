@@ -1,0 +1,29 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: #007575;
+}
+
+li{
+    list-style-type: none;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1{
+    text-align: center;
+    color: #002E2E;
+    font-family: BebasNeue;
+    font-size: 4em;
+}
+
+input:valid{
+    color: green;
+}
+
+input:invalid{
+    color: red;
+}
+
+button{
+    text-align: center;
+}

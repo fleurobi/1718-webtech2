@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>week 9 - oefening 2</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<form>
+    <h1>Wat weet jij over de mol?</h1>
+    <ul>
+        <li>
+            <label>Welke kleur T-shirt had de mol vandaag aan?</label>
+            <input type="text" name="shirtColor" id="shirtColor" pattern="[Rr]ood | [Gg]roen | [Gg]rijs | [Zz]wart" required>
+        </li>
+        <li>
+            <label>Sliep de mol vanacht in de auto?</label>
+            <ul>
+                <li><input type="radio" name="carSleeper" required>Ja</li>
+                <li><input type="radio" name="carSleeper" required>Nee</li>
+            </ul>
+        </li>
+        <li>
+            <label>Hoe oud schat je de mol?</label>
+            <input type="number" name="age" min="20" max="62" required>
+        </li>
+        <li>
+            <label>Als de mol een e-mail adres heeft met volgend patroon: <em>voornaam@demol.be;</em> wat is dan zijn of haar e-mail adres?</label>
+            <input type="email" name="email" pattern="[\w.%+-]+@demol.be" required>
+        </li>
+        <li>
+            <label> Argumenteer je antwoord</label>
+            <textarea name="answer" minlength="100" maxlength="500" required></textarea>
+        </li>
+    </ul>
+
+    <button type="submit" id="sendForm">Verzenden</button>
+</form>
+</body>
+<script>
+
+    let btn = document.getElementById('sendForm');
+
+</script>
+</html>
